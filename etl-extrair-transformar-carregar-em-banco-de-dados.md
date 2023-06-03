@@ -1,7 +1,7 @@
 **Índice**
 
-- [**O problema**](#o-problema)
-- [**A solução**](#a-solução)
+- [O problema](#o-problema)
+- [A solução](#a-solução)
 - [E agora, como migrar os dados para nova estrutura?](#e-agora-como-migrar-os-dados-para-nova-estrutura)
 - [Sobre a aplicação para ETL](#sobre-a-aplicação-para-etl)
 - [Resultado do ETL](#resultado-do-etl)
@@ -12,7 +12,7 @@ Opa, espero que estejam bem!
 
 Bom... vou compartilhar uma história de alguns meses mas tentarei ser o mais breve possível.
 
-### **O problema**
+### O problema
 
 Em um dos sistemas do cliente da empresa que trabalho, existia um chat de atendimento legado onde era centralizado toda comunicação entre a equipe de atendimento que fazem parte de filiais da empresa do grupo e usuários do sistema, e por ser um sistema legado sempre havia issues de bugs que surgiam por uma falta de boa estrutura de dados, consequentemente também várias issues de performance e escalabilidade levando em consideração que apenas tabelas diretas da funcionalidade que registravam `conversas` e `mensagens` e outras que compunham a consulta destas duas tinham juntas por volta de ~7.5MM de registros, indiretas de `usuários` e `atendentes` envolvidos e outras por volta de mais ~1MM, naquela estrutura e com as consultas necessárias esses números já era um problema.
 
@@ -20,7 +20,7 @@ Dito isso, passei alguns meses atendendo issues que para correção ou implement
 
 E a discussão de uma refatoração de toda a funcionalidade sempre estava presente na equipe por causa da forma que estava posto a estrutura de dados, só que isso não era uma discussão tão simples pois existia duas equipes a interna do cliente e a externa que eu faço parte.
 
-### **A solução**
+### A solução
 
 Então alguns meses na luta, a recomendação da refatoração foi atendida pelo cliente, para alegria de todos que esbarravam na funcionalidade e principalmente a minha que estava pegando a maioria das issues.
 
